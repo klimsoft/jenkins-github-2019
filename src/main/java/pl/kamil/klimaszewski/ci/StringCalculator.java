@@ -16,6 +16,18 @@ public class StringCalculator {
        return sum;
    }
 
+   public void dangerousCode(String input) {
+        String nullString = null;
+        if (nullString.equals("ERROR")) {
+            while (input.length() < 10) {
+                System.out.println("Without end");
+            }
+        }
+        if (input.equals("END")) {
+            System.exit(0);
+        }
+   }
+
    private int test() {
         return 1;
    }
